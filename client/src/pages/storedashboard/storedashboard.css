@@ -1,0 +1,69 @@
+.storedashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+}
+
+.left {
+    width: 300px;
+    position: fixed;
+    height: 100%; /* Occupy full height of the viewport */
+    background-color: #283290;
+    color: white;
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+    transition: width 0.2s ease;
+}
+
+.right {
+    margin-left: 300px; /* Adjust for the width of the left sidebar */
+    flex-grow: 1; /* Fill remaining space */
+    padding: 20px;
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+}
+
+.dashboardul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.dashboardListItem {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 30px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.dashboardListItem:hover {
+    background-color: #5a63b9;
+}
+
+.dashHr {
+    margin: 20px;
+}
+
+.dashListItemLogout {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 30px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.dashListItemLogout:hover {
+    background-color: #5a63b9;
+}
+
+.footer {
+    background-color: #283290;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

@@ -1,0 +1,77 @@
+.userdashboard {
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column; /* Ensure the footer stays at the bottom */
+}
+
+.left {
+    width: 300px;
+    position: fixed;
+    height: calc(100vh - 50px);
+    background-color: #283290;
+    transition: 0.2s ease all;
+    overflow-y: auto; /* Add overflow-y for smaller screens */
+}
+
+.right {
+    width: calc(100% - 300px);
+    position: relative;
+    margin-left: 300px; /* Adjust for the width of the left sidebar */
+    padding: 20px; /* Add padding for content */
+    overflow-y: auto; /* Add overflow-y for smaller screens */
+}
+
+.footer {
+    background-color: #283290;
+    color: rgb(183, 123, 123);
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.dashboardul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboardListItem,
+.dashListItemLogout {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    list-style-type: none;
+    padding: 20px 30px;
+    padding-left: 40px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    color: white;
+    transition: all 0.2s ease;
+    border-radius: 10px;
+}
+
+.dashboardListItem:hover,
+.dashListItemLogout:hover {
+    background-color: #5a63b9;
+}
+
+.dashHr {
+    margin: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+    .left {
+        z-index: 999;
+    }
+
+    .active {
+        width: 0;
+    }
+
+    .right {
+        width: 100%;
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+}

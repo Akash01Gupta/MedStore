@@ -1,0 +1,67 @@
+/* Modernized Order Table CSS */
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.errorDiv {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.errorMessage {
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.crBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Modernized Order Table Tbrow CSS */
+/* Status Button */
+.statusButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #283290;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Disabled Status Button */
+.statusButton:disabled {
+    cursor: not-allowed;
+    background-color: #bbb;
+    color: #666;
+}
+
+/* Container for Status Button */
+.statusButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .statusButton {
+        width: 80px;
+        font-size: 14px;
+        padding: 8px;
+        margin: 10px 0;
+    }
+}

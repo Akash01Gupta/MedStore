@@ -1,0 +1,27 @@
+{
+  "engines": {
+"node": "v23.7.0"
+  },
+
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^6.16.0",
+    "mongoose": "^5.13.23",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.12"
+  }
+}

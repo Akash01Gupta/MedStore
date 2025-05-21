@@ -1,0 +1,148 @@
+/* Updated CSS for Store Registration component */
+
+/* Main container for store registration page */
+.storeregContainer {
+    width: 100%;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+/* Wrapper for store registration content */
+.storeregWrapper {
+    width: 80%;
+    display: flex;
+}
+
+/* Right side of store registration content */
+.storeregRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Store registration box */
+.storeregBox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 100px;
+    justify-content: space-around;
+    Box-shadow: 0px 0px 27px -10px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px 0px 27px -10px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 27px -10px rgba(0,0,0,0.45);
+}
+
+/* Input field wrapper */
+.divinput {
+    margin: 15px 0px;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+/* Label for input field */
+.divinput label {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: rgb(117 98 98);
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: top .3s;
+    padding: 0 5px;
+    pointer-events: none;
+}
+
+/* Input field */
+.divinput input:focus ~ label,
+.divinput input:not(:focus):valid ~ label {
+    top: -12px;
+    background-color: white;
+    font-size: 15px;
+    color: #1775ee;
+    border-radius: 10px;
+}
+
+/* Store registration input */
+.storeregInput {
+    height: 40px;
+    background: transparent;
+    padding-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+    width: 100%;
+}
+
+.storeregInput:focus {
+    border: 1px solid blue;
+}
+
+/* Store registration button */
+.storeregButton {
+    align-items: center;
+    background-color: #283290;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin: 20px 0px;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.storeregButton:disabled {
+    cursor: not-allowed;
+}
+
+/* Error message */
+.errorMessage {
+    background-color: red;
+    padding: 10px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Address map */
+.addressMap {
+    width: 100%;
+    height: 400px;
+    margin: 15px 0px;
+}
+
+/* Error message div */
+.errorDiv {
+    margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .storeregWrapper {
+        width: 100%;
+        display: flex;
+    }
+    .storeregBox {
+        background-color: white;
+        display: flex;
+        margin: unset;
+        padding: 20px 20px;
+        flex-direction: column;
+        justify-content: space-around;
+        box-shadow: unset;
+    }
+    .storeregButton {
+        width: 100%;
+    }
+}
